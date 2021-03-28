@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+3.11
 
-You can use the [editor on GitHub](https://github.com/hailanzyzby/BoyaBlog.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+1.中缀表达式——》后缀表达式
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+3+5/2——〉3
 
-### Markdown
+没有括号
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+每次遇到+，—就放到栈里，遇到*/就计算
 
-```markdown
-Syntax highlighted code block
+但是为什么用pre记录前一个计算符？因为如果针对当前计算符，那么后面一个数据是不知道的
 
-# Header 1
-## Header 2
-### Header 3
+所以计算前一对数值的方法才是可行的
 
-- Bulleted
-- List
+2.滑动窗口，求最长无重复字符串序列，求最大子序列和
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+3java优先队列，默认大根堆
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hailanzyzby/BoyaBlog.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+3.12
 
-### Support or Contact
+4.中位数的求解（X）暴力方法
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+5.求最长回文串（动态规划）
+
+动态规划：用空间换时间,列出状态转移方程，一个状态可以由它的子状态求出（类似递归），要用到dp[][]来保存原来求出的数据。
+
+中心扩散：从中间点往外扩展
+
+6.数字越界问题
+
+num  = num*10 + b;
+
+max = Integer.MAX_VALUE , min = Integer.MIN_VALUE
+
+此时num，b都为正数：num>max/10  或者 num==max/10 && b > max%10;
+
+此时num，b都为负数：num<min/10  或者 num==min/10 && b < min%10;
+
